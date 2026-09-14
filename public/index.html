@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Yard Work Planner</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <h1>Yard Work Planner</h1>
+  <div class="layout">
+    <div class="diagram-wrap">
+      <object id="diagram" data="yard_work_planner.svg" type="image/svg+xml" style="width: 100%; height: auto; border: 3px solid #5f8a52; border-radius: 8px; box-shadow: 0 4px 8px rgba(0,0,0,0.1);"></object>
+      <p class="hint">Click a section of the yard to view/edit its details.</p>
+
+      <div id="taskAssign" class="task-assign">
+        <h3>Add a Task</h3>
+        <form id="newTaskForm" class="inline-form">
+          <input type="text" id="newTaskInput" placeholder="Enter a task..." required>
+          <button type="submit">Add</button>
+        </form>
+        <p id="taskAssignStatus" class="task-assign-status"></p>
+      </div>
+    </div>
+
+    <div id="panel" class="panel">
+      <p class="placeholder">Select a section on the diagram to get started.</p>
+    </div>
+  </div>
+
+  <div id="allTasksPanel" class="all-tasks-panel">
+    <h2>All Tasks</h2>
+    <ul id="allTasksList" class="all-tasks-list"></ul>
+  </div>
+
+  <div id="sunOverviewPanel" class="all-tasks-panel sun-overview-panel">
+    <div class="sun-overview-header">
+      <h2>Sun Exposure Right Now</h2>
+      <span id="sunOverviewClock" class="sun-overview-clock"></span>
+    </div>
+    <ul id="sunOverviewList" class="sun-overview-list"></ul>
+  </div>
+
+  <script src="app.js"></script>
+</body>
+</html>

@@ -1,0 +1,14 @@
+node_modules/
+.npm/
+*.log
+npm-debug.log*
+.DS_Store
+Thumbs.db
+
+# Local app data
+# Keep personal planner data out of GitHub
+/data.json
+
+# Optional environment files
+.env
+.env.*

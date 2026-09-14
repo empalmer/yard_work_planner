@@ -1,0 +1,12 @@
+{
+  "name": "yard-work-planner",
+  "version": "1.0.0",
+  "description": "Local app to track yard sections, plants, work log dates, and sun/shade info.",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js"
+  },
+  "dependencies": {
+    "express": "^4.19.2"
+  }
+}
